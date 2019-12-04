@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<!--引入jQuery-->
+	<script src="js/easyui/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<!--引入jQuery.easyUI核心包-->
+	<script src="js/easyui/jquery.easyui.min.js" type="text/javascript" charset="utf-8"></script>
+	<!--引入easyUI样式-->
+	<link rel="stylesheet" href="js/easyui/themes/default/easyui.css" />
+	<link rel="stylesheet" href="js/easyui/themes/icon.css" />
+	<!--中文国际-->
+	<script type="text/javascript" src="js/easyui/locale/easyui-lang-zh_CN.js" ></script>
+	<body class="easyui-layout" id="cc">
+		<!--div盒子模型-->
+		<!--<div id="p" class="easyui-panel" style="width:500px;height:200px;padding:10px;"
+		    title="My Panel" data-options="iconCls:'icon-save',collapsible:true">
+		    The panel content
+		</div>-->
+		
+		<!--<input class="easyui-combobox" name="language"
+		    data-options="
+		    url:'combobox_data.json',
+		    valueField:'id',
+		    textField:'text',
+		    panelHeight:'auto',
+		    onSelect:function(record){
+		    alert(record.text)
+		    }">-->
+		    
+
+	    <div data-options="region:'north',title:'青鸟官网',split:true" style="height:120px;">
+	    	<h1 align="center">北大青鸟官网</h1>
+	    </div>
+	    <div data-options="region:'south',title:'',split:true" style="height:50px;">
+	    	<p align="center">最终解释权北大青鸟所有</p>
+	    </div>
+	    <!--<div data-options="region:'east',title:'East',split:true" style="width:100px;"></div>-->
+	    <div  data-options="region:'west',title:'信息展示',split:true,collapsible:true" style="width:200px;" >
+	    	
+	    	<div id="aa" class="easyui-accordion" style="width:300px;height:200px;" data-options="fit:true">
+			    <div title="班级管理" data-options="iconCls:'icon-save'" style="overflow:auto;padding:10px;">
+					content1
+			    </div>
+			    <div title="学习计划" data-options="iconCls:'icon-reload',selected:true" style="padding:10px;">
+					content2
+			    </div>
+			    <div title="学习管理" data-options="iconCls:'icon-reload'" >
+					content3
+			    </div>
+			</div>
+	    	
+	    	
+	    </div>
+	    <div data-options="region:'center',title:'展示区域'" style="padding:5px;background:#eee;">
+	    	
+	    	<div id="tt" class="easyui-tabs" style="width:500px;height:250px;" data-options="fit:true">
+			 <div title="Tab1" style="padding:20px;display:none;">
+					
+					<input class="easyui-textbox" data-options="iconCls:'icon-man'" style="width:300px"><br /><br />
+					<input class="easyui-textbox" data-options="iconCls:'icon-lock'" style="width:300px" type="password">
+					
+					 <input class="easyui-passwordbox" prompt="请输入密码" iconWidth="28" 
+					 	style="width:10%;height:34px;padding:10px">
+			    </div>
+			    <div title="Tab2" data-options="closable:true" data-options = "fit:true" style="overflow:auto;padding:20px;display:none;">
+					<table class="easyui-datagrid" data-options="fit:true">
+					    <thead>
+							<tr>
+								<th data-options="field:'code'">编号</th>
+								<th data-options="field:'name'">名称</th>
+								<th data-options="field:'price'">价格</th>
+							</tr>
+					    </thead>
+					    <tbody>
+							<tr>
+								<td>001</td><td>name1</td><td>2323</td>
+							</tr>
+							<tr>
+								<td>002</td><td>name2</td><td>4612</td>
+							</tr>
+						</tbody>
+					</table>
+					
+					
+					
+					
+			    </div>
+			    <div title="Tab3" data-options="iconCls:'icon-reload',closable:true" style="padding:20px;display:none;">
+					tab3
+			    </div>
+			    
+			</div>
+	    	
+	    	
+	    </div>
+
+<!--		    
+	    <div id="cc" class="easyui-layout" style="width:600px;height:400px;">
+		    <div data-options="region:'north',title:'North Title',split:true" style="height:100px;"></div>
+		    <div data-options="region:'south',title:'South Title',split:true" style="height:100px;"></div>
+		    <div data-options="region:'east',title:'East',split:true" style="width:100px;"></div>
+		    <div data-options="region:'west',title:'West',split:true" style="width:100px;"></div>
+		    <div data-options="region:'center',title:'center title'" style="padding:5px;background:#eee;"></div>
+		</div>-->
+		    
+		    
+	</body>
+	
+	
+	
+<script type="text/javascript">
+	//初始值为折叠状态
+	$(function(){
+
+//		$('#cc').layout('add',{
+//		    region: 'west',
+//		    width: 180,
+//		    title: '展示区域',
+//		    split: true,
+//		    tools: [{
+//				iconCls:'icon-add',
+//				handler:function(){alert('add')}
+//		    },{
+//				iconCls:'icon-remove',
+//				handler:function(){alert('remove')}
+//		    }]
+//				   
+//		});
+//		$('#cc').layout('collapse','west');
+
+//		$('#aa').accordion({
+//		    animate:true
+//		});
+//		
+		
+//		$('#tt').tabs('add',{
+//		    title:'New Tab',
+//		    content:'Tab Body',
+//		    closable:true,
+//		    tools:[{
+//				iconCls:'icon-mini-refresh',
+//				handler:function(){
+//					alert('refresh');
+//				}
+//		    }]
+//		});
+		
+	})
+	
+		
+</script>
+</html>
